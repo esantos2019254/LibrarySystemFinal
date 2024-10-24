@@ -1,0 +1,33 @@
+[{
+  "_id": {
+    "$oid": "6719b2a03ab46775515d19ef"
+  },
+  "name": "Elmer",
+  "lastName": "Santos",
+  "email": "esantos@gmail.com",
+  "password": "$2a$10$BqtfVvzMcD9zg051/mXtpOB4cblBjSzYJChq3QyfhoIf/Ai/pXxau",
+  "role": "ADMIN",
+  "_class": "com.elmer.entity.user.UserEntity"
+},
+{
+  "_id": {
+    "$oid": "6719b7180de2582f0833b6b6"
+  },
+  "name": "Sergio",
+  "lastName": "Jimenez",
+  "email": "sjimenez@gmail.com",
+  "password": "$2a$10$5j/eV5TwKN4Oy9pN6Bt6TepCvDiijT5zM7N6yhmmh6Z2vK1KSqo3C",
+  "role": "CLIENT",
+  "_class": "com.elmer.entity.user.UserEntity"
+},
+{
+  "_id": {
+    "$oid": "6719bf058f00d2050b9b337c"
+  },
+  "name": "Rodrigo",
+  "lastName": "García",
+  "email": "rgarcia@gmail.com",
+  "password": "$2a$10$i1xYp4n3oMGNMEqFbnMeC.QLvmPI8fSE6KfFh9Q3WET22d5iHkiIS",
+  "role": "CLIENT",
+  "_class": "com.elmer.entity.user.UserEntity"
+}]

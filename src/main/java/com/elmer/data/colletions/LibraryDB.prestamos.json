@@ -1,0 +1,50 @@
+[{
+  "_id": {
+    "$oid": "671a88399fefcb3478fc5a88"
+  },
+  "libroId": "6719da418d57554a89d7d766",
+  "usuarioId": "esantos@gmail.com",
+  "fechaPrestamo": {
+    "$date": "2024-10-24T17:47:37.546Z"
+  },
+  "fechaDevolucion": {
+    "$date": "2024-10-24T17:56:26.467Z"
+  },
+  "_class": "com.elmer.entity.PrestamoEntity"
+},
+{
+  "_id": {
+    "$oid": "671a88579fefcb3478fc5a89"
+  },
+  "libroId": "6719da708d57554a89d7d767",
+  "usuarioId": "esantos@gmail.com",
+  "fechaPrestamo": {
+    "$date": "2024-10-24T17:48:07.613Z"
+  },
+  "_class": "com.elmer.entity.PrestamoEntity"
+},
+{
+  "_id": {
+    "$oid": "671a889a9fefcb3478fc5a8a"
+  },
+  "libroId": "671a85c75d1ee7ba62ac5938",
+  "usuarioId": "rgarcia@gmail.com",
+  "fechaPrestamo": {
+    "$date": "2024-10-24T17:49:14.304Z"
+  },
+  "_class": "com.elmer.entity.PrestamoEntity"
+},
+{
+  "_id": {
+    "$oid": "671a88a39fefcb3478fc5a8b"
+  },
+  "libroId": "671a85ec5d1ee7ba62ac5939",
+  "usuarioId": "rgarcia@gmail.com",
+  "fechaPrestamo": {
+    "$date": "2024-10-24T17:49:23.770Z"
+  },
+  "fechaDevolucion": {
+    "$date": "2024-10-24T17:55:22.862Z"
+  },
+  "_class": "com.elmer.entity.PrestamoEntity"
+}]

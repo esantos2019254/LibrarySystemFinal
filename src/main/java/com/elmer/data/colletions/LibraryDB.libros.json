@@ -1,0 +1,60 @@
+[{
+  "_id": {
+    "$oid": "6719da418d57554a89d7d766"
+  },
+  "titulo": "Cien años de soledad",
+  "autor": "Gabriel García Márquez",
+  "isbn": "978-3-16-148410-0",
+  "disponible": true,
+  "_class": "com.elmer.entity.BookEntity"
+},
+{
+  "_id": {
+    "$oid": "6719da708d57554a89d7d767"
+  },
+  "titulo": "1984",
+  "autor": "George Orwell",
+  "isbn": "978-0-452-28423-4",
+  "disponible": false,
+  "_class": "com.elmer.entity.BookEntity"
+},
+{
+  "_id": {
+    "$oid": "6719da868d57554a89d7d768"
+  },
+  "titulo": "Don Quijote de la Mancha",
+  "autor": "Miguel de Cervantes",
+  "isbn": "978-0-14-243723-0",
+  "disponible": true,
+  "_class": "com.elmer.entity.book.BookEntity"
+},
+{
+  "_id": {
+    "$oid": "6719dab08d57554a89d7d769"
+  },
+  "titulo": "Moby Dick",
+  "autor": "Herman Melville",
+  "isbn": "978-0-14-243724-7",
+  "disponible": true,
+  "_class": "com.elmer.entity.BookEntity"
+},
+{
+  "_id": {
+    "$oid": "671a85c75d1ee7ba62ac5938"
+  },
+  "titulo": "La Sombra del Viento",
+  "autor": "Carlos Ruiz Zafón",
+  "isbn": "978-0-14-303490-3",
+  "disponible": false,
+  "_class": "com.elmer.entity.BookEntity"
+},
+{
+  "_id": {
+    "$oid": "671a85ec5d1ee7ba62ac5939"
+  },
+  "titulo": "Matar a un Ruiseñor",
+  "autor": "Harper Lee",
+  "isbn": "978-0-06-093546-7",
+  "disponible": true,
+  "_class": "com.elmer.entity.BookEntity"
+}]

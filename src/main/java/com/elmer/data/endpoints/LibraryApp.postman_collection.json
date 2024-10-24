@@ -1,0 +1,258 @@
+{
+	"info": {
+		"_postman_id": "24803be5-2cee-4118-b40f-8987f646f9d8",
+		"name": "LibraryApp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "32787282"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "GetAllUsers",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJyZ2FyY2lhQGdtYWlsLmNvbSIsInJvbGUiOiJDTElFTlQiLCJleHAiOjE3MzA2MDQxNTV9.OqYyiP7AHM7Nn_kRLQRsXL5_qiza4zTa_zUNw3CC0fQ"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/api/user/"
+					},
+					"response": []
+				},
+				{
+					"name": "GetUser",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJyZ2FyY2lhQGdtYWlsLmNvbSIsInJvbGUiOiJDTElFTlQiLCJleHAiOjE3MzA2MDQxNTV9.OqYyiP7AHM7Nn_kRLQRsXL5_qiza4zTa_zUNw3CC0fQ"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/api/user/6719b7180de2582f0833b6b6"
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateUser",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJyZ2FyY2lhQGdtYWlsLmNvbSIsInJvbGUiOiJDTElFTlQiLCJleHAiOjE3MzA2MDQ1NTl9.awCtxO8cR2AFEJc_ZrRntiFj1abm5ffeIlpSBtOfM1c"
+							}
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Rodrigo\",\r\n  \"lastName\": \"García\",\r\n  \"email\": \"rgarcia@gmail.com\",\r\n  \"password\": \"1234567\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/user/6719bf058f00d2050b9b337c"
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteUser",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJmcm9kcmlndWV6QGdtYWlsLmNvbSIsInJvbGUiOiJDTElFTlQiLCJleHAiOjE3MzA2MDQzNjd9._Ko2hpulnosMx60xJjzRRw1xd3FEvmC00VXt3JGkmgo"
+							}
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8080/api/user/6719be2b37628311c86f9b6f"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Rodrigo\",\r\n  \"lastName\": \"Garcia\",\r\n  \"email\": \"rgarcia@gmail.com\",\r\n  \"password\": \"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/auth/register"
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"esantos@gmail.com\",\r\n    \"password\": \"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/auth/login"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Book",
+			"item": [
+				{
+					"name": "CreateBook",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJyZ2FyY2lhQGdtYWlsLmNvbSIsInJvbGUiOiJDTElFTlQiLCJleHAiOjE3MzA2MTE5MjV9.OWK7lud_oWoVIhEPhWJipczQC-tq_x-tVSAfIR3xOKI"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"titulo\": \"El Hobbit\",\r\n    \"autor\": \"J.R.R. Tolkien\",\r\n    \"isbn\": \"978-0-618-26030-0\",\r\n    \"disponible\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/libro"
+					},
+					"response": []
+				},
+				{
+					"name": "GetAllBooks",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJyZ2FyY2lhQGdtYWlsLmNvbSIsInJvbGUiOiJDTElFTlQiLCJleHAiOjE3MzA2NTU1MjJ9.maKWBhV4PcMCLOTnjHXW4_KZ097Fw2Rc9TFCTitPEaI"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/api/libro/"
+					},
+					"response": []
+				},
+				{
+					"name": "GetBook",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJyZ2FyY2lhQGdtYWlsLmNvbSIsInJvbGUiOiJDTElFTlQiLCJleHAiOjE3MzA2MTE5MjV9.OWK7lud_oWoVIhEPhWJipczQC-tq_x-tVSAfIR3xOKI"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/api/libro/6719da708d57554a89d7d767"
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateBook",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJyZ2FyY2lhQGdtYWlsLmNvbSIsInJvbGUiOiJDTElFTlQiLCJleHAiOjE3MzA2MTE5MjV9.OWK7lud_oWoVIhEPhWJipczQC-tq_x-tVSAfIR3xOKI"
+							}
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"titulo\": \"El nombre de la rosa\",\r\n    \"autor\": \"Umberto Eco\",\r\n    \"isbn\": \"978-0-06-202451-0\",\r\n    \"disponible\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/libro/6719da708d57554a89d7d767"
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteBook",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJyZ2FyY2lhQGdtYWlsLmNvbSIsInJvbGUiOiJDTElFTlQiLCJleHAiOjE3MzA2MTE5MjV9.OWK7lud_oWoVIhEPhWJipczQC-tq_x-tVSAfIR3xOKI"
+							}
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8080/api/libro/6719da708d57554a89d7d767"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Library",
+			"item": [
+				{
+					"name": "PrestarBook",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJyZ2FyY2lhQGdtYWlsLmNvbSIsInJvbGUiOiJDTElFTlQiLCJleHAiOjE3MzA2NTYxMTl9.RBzal6MarrEC6v6BY2Iwbgw6FxGDLGwWw7CKMUg2xNQ"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"url": "http://localhost:8080/api/biblioteca/prestar/671a85ec5d1ee7ba62ac5939"
+					},
+					"response": []
+				},
+				{
+					"name": "DevolverBook",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJlc2FudG9zQGdtYWlsLmNvbSIsInJvbGUiOiJBRE1JTiIsImV4cCI6MTczMDY1NjU0N30.uUisofoZEoa7TXRyeasIty-lBFCA7JdHt_BjlWQQqHo"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"url": "http://localhost:8080/api/biblioteca/devolver/6719da418d57554a89d7d766"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
